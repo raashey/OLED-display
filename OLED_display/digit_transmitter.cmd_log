@@ -1,0 +1,16 @@
+vhdtdtfi -lib work digit_transmitter.vhd -prj OLED_display -o digit_transmitter.spl -module digit_transmitter -template E:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e digit_transmitter.spl C:/Users/Developer/Xilinx/OLED_display/digit_transmitter.sym 
+vhdtdtfi -lib work digit_transmitter.vhd -prj OLED_display -o digit_transmitter.spl -module digit_transmitter -template E:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e digit_transmitter.spl C:/Users/Developer/Xilinx/OLED_display/digit_transmitter.sym 
+vhdtdtfi -lib work digit_transmitter.vhd -prj OLED_display -o digit_transmitter.spl -module digit_transmitter -template E:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e digit_transmitter.spl C:/Users/Thamian/OLED_display/digit_transmitter.sym 
+vhdtdtfi -lib work digit_transmitter.vhd -prj OLED_display -o digit_transmitter.spl -module digit_transmitter -template E:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e digit_transmitter.spl C:/Users/Thamian/OLED_display/digit_transmitter.sym 
+vhdtdtfi -lib work digit_transmitter.vhd -prj OLED_display -o digit_transmitter.spl -module digit_transmitter -template E:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e digit_transmitter.spl C:/Users/Thamian/OLED_display/digit_transmitter.sym 
+vhdtdtfi -lib work digit_transmitter.vhd -prj OLED_display -o digit_transmitter.spl -module digit_transmitter -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e digit_transmitter.spl C:/XilinxPrj/OLED_display/digit_transmitter.sym 
+vhdtdtfi -lib work digit_transmitter.vhd -prj OLED_display -o digit_transmitter.spl -module digit_transmitter -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e digit_transmitter.spl C:/XilinxPrj/OLED_display/digit_transmitter.sym 
+vhdtdtfi -lib work digit_transmitter.vhd -prj OLED_display -o digit_transmitter.spl -module digit_transmitter -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e digit_transmitter.spl C:/XilinxPrj/OLED_display/digit_transmitter.sym 

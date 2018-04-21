@@ -1,0 +1,2 @@
+vhdl work "digit_transmitter.vhd"
+vhdl work "test_bench_digit_transmitter.vhd"

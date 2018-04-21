@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/Thamian/current_xilinx_1904/OLED_display/test_bench_digit_transmitter_isim_beh.exe" -prj "C:/Users/Thamian/current_xilinx_1904/OLED_display/test_bench_digit_transmitter_beh.prj" "work.test_bench_digit_transmitter" 

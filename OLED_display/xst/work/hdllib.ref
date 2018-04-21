@@ -1,0 +1,12 @@
+AR oled_ctrl behavioral C:/XilinxPrj/current_xilinx_1904/OLED_display/OLED_Ctrl.vhd sub00/vhpl09 1524125474
+EN character_rom NULL C:/XilinxPrj/current_xilinx_1904/OLED_display/character_ROM.vhd sub00/vhpl00 1524125465
+AR i2c_master structure C:/XilinxPrj/current_xilinx_1904/OLED_display/I2C_Master.vhd sub00/vhpl07 1524125472
+AR digit_transmitter behavioral C:/XilinxPrj/current_xilinx_1904/OLED_display/digit_transmitter.vhd sub00/vhpl05 1524125470
+EN i2c_master NULL C:/XilinxPrj/current_xilinx_1904/OLED_display/I2C_Master.vhd sub00/vhpl06 1524125471
+AR digit_printer behavioral C:/XilinxPrj/current_xilinx_1904/OLED_display/digit_printer.vhd sub00/vhpl03 1524125468
+EN digit_printer NULL C:/XilinxPrj/current_xilinx_1904/OLED_display/digit_printer.vhd sub00/vhpl02 1524125467
+AR character_rom syn C:/XilinxPrj/current_xilinx_1904/OLED_display/character_ROM.vhd sub00/vhpl01 1524125466
+EN digit_transmitter NULL C:/XilinxPrj/current_xilinx_1904/OLED_display/digit_transmitter.vhd sub00/vhpl04 1524125469
+MO OLED_display NULL OLED_display.vf vlg6D/_o_l_e_d__display.bin 1524125465
+MO IFD_MXILINX_OLED_display NULL OLED_display.vf vlg1F/_i_f_d___m_x_i_l_i_n_x___o_l_e_d__display.bin 1524125465
+EN oled_ctrl NULL C:/XilinxPrj/current_xilinx_1904/OLED_display/OLED_Ctrl.vhd sub00/vhpl08 1524125473

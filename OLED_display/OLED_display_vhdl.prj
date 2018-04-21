@@ -1,0 +1,5 @@
+vhdl work "C:\XilinxPrj\current_xilinx_1904\OLED_display\OLED_Ctrl.vhd"
+vhdl work "C:\XilinxPrj\current_xilinx_1904\OLED_display\I2C_Master.vhd"
+vhdl work "C:\XilinxPrj\current_xilinx_1904\OLED_display\digit_transmitter.vhd"
+vhdl work "C:\XilinxPrj\current_xilinx_1904\OLED_display\digit_printer.vhd"
+vhdl work "C:\XilinxPrj\current_xilinx_1904\OLED_display\character_ROM.vhd"

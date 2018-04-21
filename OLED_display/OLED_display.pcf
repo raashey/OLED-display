@@ -1,0 +1,16 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Thu Apr 19 10:11:20 2018
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "SDA" LOCATE = SITE "F8" LEVEL 1;
+COMP "SCL" LOCATE = SITE "E8" LEVEL 1;
+COMP "LED7" LOCATE = SITE "F9" LEVEL 1;
+COMP "BUTTON" LOCATE = SITE "K17" LEVEL 1;
+COMP "RST" LOCATE = SITE "D18" LEVEL 1;
+COMP "EN_PRINTER" LOCATE = SITE "F12" LEVEL 1;
+COMP "CLK" LOCATE = SITE "C9" LEVEL 1;
+NET "CLK_BUFGP/IBUFG" BEL "CLK_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+NET "CLK_BUFGP/IBUFG" PERIOD = 20 ns HIGH 50%;
+SCHEMATIC END;
+

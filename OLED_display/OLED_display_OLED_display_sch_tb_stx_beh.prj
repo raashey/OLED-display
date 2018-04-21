@@ -1,0 +1,6 @@
+vhdl isim_temp "OLED_Ctrl.vhd"
+vhdl isim_temp "I2C_Master.vhd"
+vhdl isim_temp "digit_transmitter.vhd"
+vhdl isim_temp "digit_printer.vhd"
+vhdl isim_temp "character_ROM.vhd"
+vhdl isim_temp "tboled.vhd"

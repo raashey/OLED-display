@@ -1,0 +1,6 @@
+vhdl work "OLED_Ctrl.vhd"
+vhdl work "I2C_Master.vhd"
+vhdl work "digit_transmitter.vhd"
+vhdl work "digit_printer.vhd"
+vhdl work "character_ROM.vhd"
+verilog work "OLED_display.vf"

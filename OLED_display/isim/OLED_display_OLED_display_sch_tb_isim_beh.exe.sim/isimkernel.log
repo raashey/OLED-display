@@ -1,0 +1,32 @@
+Command line:
+   OLED_display_OLED_display_sch_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50638
+
+Wed Apr 18 23:08:00 2018
+
+
+ Elaboration Time: 0.218401 sec
+
+ Current Memory Usage: 673.64 Meg
+
+ Total Signals          : 1308
+ Total Nets             : 1853
+ Total Signal Drivers   : 377
+ Total Blocks           : 231
+ Total Primitive Blocks : 228
+ Total Processes        : 361
+ Total Traceable Variables  : 441
+ Total Scalar Nets and Variables : 10386
+Total Line Count : 1203
+Total Line Count : 1203
+Total Line Count : 1203
+Total Line Count : 1203
+
+ Total Simulation Time: 36.0518 sec
+
+ Current Memory Usage: 673.64 Meg
+
+Wed Apr 18 23:55:04 2018
+

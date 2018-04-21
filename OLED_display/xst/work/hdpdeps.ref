@@ -1,0 +1,49 @@
+V3 49
+FL C:/Users/Thamian/current_xilinx_1904/OLED_display/character_ROM.vhd 2018/04/05.09:26:10 P.20131013
+FL C:/Users/Thamian/current_xilinx_1904/OLED_display/digit_printer.vhd 2018/04/05.10:33:50 P.20131013
+FL C:/Users/Thamian/current_xilinx_1904/OLED_display/digit_transmitter.vhd 2018/04/05.08:46:14 P.20131013
+FL C:/Users/Thamian/current_xilinx_1904/OLED_display/I2C_Master.vhd 2018/03/07.23:24:04 P.20131013
+FL C:/Users/Thamian/current_xilinx_1904/OLED_display/OLED_Ctrl.vhd 2018/03/07.23:06:44 P.20131013
+FL C:/XilinxPrj/current_xilinx_1904/OLED_display/character_ROM.vhd 2018/04/19.10:02:44 P.20131013
+EN work/character_ROM 1524125465 \
+      FL C:/XilinxPrj/current_xilinx_1904/OLED_display/character_ROM.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/character_ROM/syn 1524125466 \
+      FL C:/XilinxPrj/current_xilinx_1904/OLED_display/character_ROM.vhd \
+      EN work/character_ROM 1524125465
+FL C:/XilinxPrj/current_xilinx_1904/OLED_display/digit_printer.vhd 2018/04/19.09:18:04 P.20131013
+EN work/digit_printer 1524125467 \
+      FL C:/XilinxPrj/current_xilinx_1904/OLED_display/digit_printer.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
+      PB ieee/NUMERIC_STD 1381692181
+AR work/digit_printer/Behavioral 1524125468 \
+      FL C:/XilinxPrj/current_xilinx_1904/OLED_display/digit_printer.vhd \
+      EN work/digit_printer 1524125467
+FL C:/XilinxPrj/current_xilinx_1904/OLED_display/digit_transmitter.vhd 2018/04/19.09:16:52 P.20131013
+EN work/digit_transmitter 1524125469 \
+      FL C:/XilinxPrj/current_xilinx_1904/OLED_display/digit_transmitter.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/digit_transmitter/Behavioral 1524125470 \
+      FL C:/XilinxPrj/current_xilinx_1904/OLED_display/digit_transmitter.vhd \
+      EN work/digit_transmitter 1524125469
+FL C:/XilinxPrj/current_xilinx_1904/OLED_display/I2C_Master.vhd 2018/03/07.23:24:04 P.20131013
+EN work/I2C_Master 1524125471 \
+      FL C:/XilinxPrj/current_xilinx_1904/OLED_display/I2C_Master.vhd \
+      PB ieee/std_logic_1164 1381692176 LB UNISIM PH unisim/VCOMPONENTS 1381692182
+AR work/I2C_Master/STRUCTURE 1524125472 \
+      FL C:/XilinxPrj/current_xilinx_1904/OLED_display/I2C_Master.vhd \
+      EN work/I2C_Master 1524125471 CP GND CP VCC CP FDE CP FDRE CP FDR CP MUXCY \
+      CP XORCY CP IOBUF CP FDS CP RAM16X1D CP LUT2 CP LUT3 CP LUT4 CP FDRS CP LUT1 \
+      CP MUXF5 CP INV CP LUT4_D CP LUT2_L CP LUT3_L CP LUT4_L CP LUT3_D CP LUT2_D
+FL C:/XilinxPrj/current_xilinx_1904/OLED_display/OLED_Ctrl.vhd 2018/03/07.23:06:44 P.20131013
+EN work/OLED_Ctrl 1524125473 \
+      FL C:/XilinxPrj/current_xilinx_1904/OLED_display/OLED_Ctrl.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/OLED_Ctrl/Behavioral 1524125474 \
+      FL C:/XilinxPrj/current_xilinx_1904/OLED_display/OLED_Ctrl.vhd \
+      EN work/OLED_Ctrl 1524125473
+FL C:/XilinxPrj/OLED_display/character_ROM.vhd 2018/04/05.09:26:09 P.20131013
+FL C:/XilinxPrj/OLED_display/digit_printer.vhd 2018/04/05.10:33:48 P.20131013
+FL C:/XilinxPrj/OLED_display/digit_transmitter.vhd 2018/04/05.08:46:12 P.20131013
+FL C:/XilinxPrj/OLED_display/I2C_Master.vhd 2018/03/07.23:24:04 P.20131013
+FL C:/XilinxPrj/OLED_display/OLED_Ctrl.vhd 2018/03/07.23:06:44 P.20131013

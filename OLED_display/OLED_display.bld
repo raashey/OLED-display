@@ -1,0 +1,42 @@
+Release 14.7 ngdbuild P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\ngdbuild.exe -intstyle
+ise -dd _ngo -nt timestamp -uc OLED_J4.ucf -uc GenIO.ucf -p xc3s500e-fg320-4
+OLED_display.ngc OLED_display.ngd
+
+Reading NGO file
+"C:/XilinxPrj/current_xilinx_1904/OLED_display/OLED_display.ngc" ...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "OLED_J4.ucf" ...
+Annotating constraints to design from ucf file "GenIO.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+INFO:ConstraintSystem - The Period constraint <PERIOD = 20.0ns HIGH 50%;>
+   [GenIO.ucf(2)], is specified using the Net Period method which is not
+   recommended. Please use the Timespec PERIOD method.
+
+Done...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 114704 kilobytes
+
+Writing NGD file "OLED_display.ngd" ...
+Total REAL time to NGDBUILD completion:  2 sec
+Total CPU time to NGDBUILD completion:   2 sec
+
+Writing NGDBUILD log file "OLED_display.bld"...

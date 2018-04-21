@@ -1,0 +1,29 @@
+Command line:
+   test_bench_digit_transmitter_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  51269
+
+Wed Apr 18 23:57:19 2018
+
+
+ Elaboration Time: 0.0312 sec
+
+ Current Memory Usage: 668.86 Meg
+
+ Total Signals          : 16
+ Total Nets             : 179
+ Total Signal Drivers   : 8
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 8
+ Total Traceable Variables  : 9
+ Total Scalar Nets and Variables : 540
+Total Line Count : 36
+
+ Total Simulation Time: 0.078 sec
+
+ Current Memory Usage: 668.86 Meg
+
+Thu Apr 19 00:07:14 2018
+

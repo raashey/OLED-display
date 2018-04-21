@@ -1,0 +1,2 @@
+vhdtdtfi -lib work OLED_controller.vhd -prj OLED_display -o OLED_controller.spl -module OLED_controller -template E:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e OLED_controller.spl C:/Users/Thamian/OLED_display/OLED_controller.sym 

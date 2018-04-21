@@ -1,0 +1,11 @@
+MODULE OLED_display
+	SUBMODULE I2C_Master
+		INSTANCE IM0
+	SUBMODULE OLED_Ctrl
+		INSTANCE OC0
+	SUBMODULE character_ROM
+		INSTANCE cR0
+	SUBMODULE digit_transmitter
+		INSTANCE dt0
+	SUBMODULE digit_printer
+		INSTANCE dp0

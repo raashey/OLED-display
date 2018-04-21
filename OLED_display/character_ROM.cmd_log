@@ -1,0 +1,8 @@
+vhdtdtfi -lib work character_ROM.vhd -prj OLED_display -o character_ROM.spl -module character_ROM -template E:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e character_ROM.spl C:/Users/Developer/Xilinx/OLED_display/character_ROM.sym 
+vhdtdtfi -lib work character_ROM.vhd -prj OLED_display -o character_ROM.spl -module character_ROM -template E:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e character_ROM.spl C:/Users/Developer/Xilinx/OLED_display/character_ROM.sym 
+vhdtdtfi -lib work character_ROM.vhd -prj OLED_display -o character_ROM.spl -module character_ROM -template E:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e character_ROM.spl C:/Users/Developer/Xilinx/OLED_display/character_ROM.sym 
+vhdtdtfi -lib work character_ROM.vhd -prj OLED_display -o character_ROM.spl -module character_ROM -template E:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e character_ROM.spl C:/Users/Developer/Xilinx/OLED_display/character_ROM.sym 

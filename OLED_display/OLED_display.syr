@@ -1,0 +1,895 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Reading design: OLED_display.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "OLED_display.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "OLED_display"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : OLED_display
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/XilinxPrj/current_xilinx_1904/OLED_display/character_ROM.vhd" in Library work.
+Entity <character_rom> compiled.
+Entity <character_rom> (Architecture <syn>) compiled.
+Compiling vhdl file "C:/XilinxPrj/current_xilinx_1904/OLED_display/digit_printer.vhd" in Library work.
+Architecture behavioral of Entity digit_printer is up to date.
+Compiling vhdl file "C:/XilinxPrj/current_xilinx_1904/OLED_display/digit_transmitter.vhd" in Library work.
+Architecture behavioral of Entity digit_transmitter is up to date.
+Compiling vhdl file "C:/XilinxPrj/current_xilinx_1904/OLED_display/I2C_Master.vhd" in Library work.
+Architecture structure of Entity i2c_master is up to date.
+Compiling vhdl file "C:/XilinxPrj/current_xilinx_1904/OLED_display/OLED_Ctrl.vhd" in Library work.
+Architecture behavioral of Entity oled_ctrl is up to date.
+Compiling verilog file "OLED_display.vf" in library work
+Module <IFD_MXILINX_OLED_display> compiled
+Module <OLED_display> compiled
+No errors in compilation
+Analysis of file <"OLED_display.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <OLED_display> in library <work>.
+
+Analyzing hierarchy for entity <character_rom> in library <work> (architecture <syn>).
+
+Analyzing hierarchy for entity <digit_printer> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <digit_transmitter> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <i2c_master> in library <work> (architecture <structure>).
+
+Analyzing hierarchy for entity <oled_ctrl> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for module <IFD_MXILINX_OLED_display> in library <work> with parameters.
+	INIT = "0"
+
+WARNING:Xst:2591 - "OLED_display.vf" line 45: attribute on instance <IBUF_DELAY_VALUE> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "OLED_display.vf" line 45: attribute on instance <IFD_DELAY_VALUE> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "OLED_display.vf" line 45: attribute on instance <IOSTANDARD> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <OLED_display>.
+WARNING:Xst:852 - "OLED_display.vf" line 90: Unconnected input port 'DATA_IN' of instance 'dp0' is tied to GND.
+WARNING:Xst:852 - "OLED_display.vf" line 107: Unconnected input port 'FIFO_Pop' of instance 'IM0' is tied to GND.
+WARNING:Xst:852 - "OLED_display.vf" line 107: Unconnected input port 'ReadCnt' of instance 'IM0' is tied to GND.
+Module <OLED_display> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  XLXI_5_0" for instance <XLXI_5> in unit <OLED_display>.
+Analyzing Entity <character_rom> in library <work> (Architecture <syn>).
+Entity <character_rom> analyzed. Unit <character_rom> generated.
+
+Analyzing Entity <digit_printer> in library <work> (Architecture <behavioral>).
+WARNING:Xst:819 - "C:/XilinxPrj/current_xilinx_1904/OLED_display/digit_printer.vhd" line 97: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <CLK>
+Entity <digit_printer> analyzed. Unit <digit_printer> generated.
+
+Analyzing Entity <digit_transmitter> in library <work> (Architecture <behavioral>).
+Entity <digit_transmitter> analyzed. Unit <digit_transmitter> generated.
+
+Analyzing Entity <i2c_master> in library <work> (Architecture <structure>).
+    Set user-defined property "INIT =  0" for instance <RdNotWr> in unit <i2c_master>.
+    Set user-defined property "INIT =  0" for instance <sregOut_0> in unit <i2c_master>.
+    Set user-defined property "INIT =  0" for instance <sregOut_1> in unit <i2c_master>.
+    Set user-defined property "INIT =  0" for instance <sregOut_2> in unit <i2c_master>.
+    Set user-defined property "INIT =  0" for instance <sregOut_3> in unit <i2c_master>.
+    Set user-defined property "INIT =  0" for instance <sregOut_4> in unit <i2c_master>.
+    Set user-defined property "INIT =  0" for instance <sregOut_5> in unit <i2c_master>.
+    Set user-defined property "INIT =  0" for instance <sregOut_6> in unit <i2c_master>.
+    Set user-defined property "INIT =  0" for instance <sregOut_7> in unit <i2c_master>.
+    Set user-defined property "INIT =  0" for instance <NACK_12> in unit <i2c_master>.
+    Set user-defined property "INIT =  0" for instance <sregIn_0> in unit <i2c_master>.
+    Set user-defined property "INIT =  0" for instance <sregIn_1> in unit <i2c_master>.
+    Set user-defined property "INIT =  0" for instance <sregIn_2> in unit <i2c_master>.
+    Set user-defined property "INIT =  0" for instance <sregIn_3> in unit <i2c_master>.
+    Set user-defined property "INIT =  0" for instance <sregIn_4> in unit <i2c_master>.
+    Set user-defined property "INIT =  0" for instance <sregIn_5> in unit <i2c_master>.
+    Set user-defined property "INIT =  0" for instance <sregIn_6> in unit <i2c_master>.
+    Set user-defined property "INIT =  0" for instance <sregIn_7> in unit <i2c_master>.
+    Set user-defined property "INIT =  0" for instance <cntBits_0> in unit <i2c_master>.
+    Set user-defined property "INIT =  0" for instance <cntBits_1> in unit <i2c_master>.
+    Set user-defined property "INIT =  0" for instance <cntBits_2> in unit <i2c_master>.
+    Set user-defined property "INIT =  0" for instance <cntBits_3> in unit <i2c_master>.
+    Set user-defined property "INIT =  0" for instance <cntSCL_0> in unit <i2c_master>.
+    Set user-defined property "INIT =  0" for instance <cntSCL_1> in unit <i2c_master>.
+    Set user-defined property "INIT =  0" for instance <cntSCL_2> in unit <i2c_master>.
+    Set user-defined property "INIT =  0" for instance <cntSCL_3> in unit <i2c_master>.
+    Set user-defined property "INIT =  0" for instance <cntSCL_4> in unit <i2c_master>.
+    Set user-defined property "INIT =  0" for instance <cntSCL_5> in unit <i2c_master>.
+    Set user-defined property "INIT =  0" for instance <cntSCL_6> in unit <i2c_master>.
+    Set user-defined property "INIT =  0" for instance <cntSCL_7> in unit <i2c_master>.
+    Set user-defined property "INIT =  0" for instance <cntBytes_0> in unit <i2c_master>.
+    Set user-defined property "INIT =  0" for instance <cntBytes_1> in unit <i2c_master>.
+    Set user-defined property "INIT =  0" for instance <cntBytes_2> in unit <i2c_master>.
+    Set user-defined property "INIT =  0" for instance <cntBytes_3> in unit <i2c_master>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <IOB1> in unit <i2c_master>.
+    Set user-defined property "DRIVE =  12" for instance <IOB1> in unit <i2c_master>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <IOB1> in unit <i2c_master>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <IOB1> in unit <i2c_master>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <IOB1> in unit <i2c_master>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <IOB1> in unit <i2c_master>.
+    Set user-defined property "SLEW =  20" for instance <IOB1> in unit <i2c_master>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <IOB2> in unit <i2c_master>.
+    Set user-defined property "DRIVE =  12" for instance <IOB2> in unit <i2c_master>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <IOB2> in unit <i2c_master>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <IOB2> in unit <i2c_master>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <IOB2> in unit <i2c_master>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <IOB2> in unit <i2c_master>.
+    Set user-defined property "SLEW =  20" for instance <IOB2> in unit <i2c_master>.
+    Set user-defined property "INIT =  0" for instance <state_FSM_FFd3> in unit <i2c_master>.
+    Set user-defined property "INIT =  0" for instance <state_FSM_FFd1> in unit <i2c_master>.
+    Set user-defined property "INIT =  1" for instance <state_FSM_FFd6> in unit <i2c_master>.
+    Set user-defined property "INIT =  0" for instance <state_FSM_FFd4> in unit <i2c_master>.
+    Set user-defined property "INIT =  0" for instance <i_FIFO_addrWr_3> in unit <i2c_master>.
+    Set user-defined property "INIT =  0" for instance <i_FIFO_addrWr_2> in unit <i2c_master>.
+    Set user-defined property "INIT =  0" for instance <i_FIFO_addrWr_1> in unit <i2c_master>.
+    Set user-defined property "INIT =  0" for instance <i_FIFO_addrWr_0> in unit <i2c_master>.
+    Set user-defined property "INIT =  0" for instance <i_FIFO_addrRd_3> in unit <i2c_master>.
+    Set user-defined property "INIT =  0" for instance <i_FIFO_addrRd_2> in unit <i2c_master>.
+    Set user-defined property "INIT =  0" for instance <i_FIFO_addrRd_1> in unit <i2c_master>.
+    Set user-defined property "INIT =  0" for instance <i_FIFO_addrRd_0> in unit <i2c_master>.
+    Set user-defined property "INIT =  0000" for instance <i_FIFO_Mram_RAM8> in unit <i2c_master>.
+    Set user-defined property "INIT =  0000" for instance <i_FIFO_Mram_RAM7> in unit <i2c_master>.
+    Set user-defined property "INIT =  0000" for instance <i_FIFO_Mram_RAM6> in unit <i2c_master>.
+    Set user-defined property "INIT =  0000" for instance <i_FIFO_Mram_RAM5> in unit <i2c_master>.
+    Set user-defined property "INIT =  0000" for instance <i_FIFO_Mram_RAM4> in unit <i2c_master>.
+    Set user-defined property "INIT =  0000" for instance <i_FIFO_Mram_RAM3> in unit <i2c_master>.
+    Set user-defined property "INIT =  0000" for instance <i_FIFO_Mram_RAM2> in unit <i2c_master>.
+    Set user-defined property "INIT =  0000" for instance <i_FIFO_Mram_RAM1> in unit <i2c_master>.
+    Set user-defined property "INIT =  0" for instance <i_FIFO_iFull> in unit <i2c_master>.
+    Set user-defined property "INIT =  1" for instance <i_FIFO_iEmpty> in unit <i2c_master>.
+    Set user-defined property "INIT =  6" for instance <Mcount_cntBits_xor_1_11> in unit <i2c_master>.
+    Set user-defined property "INIT =  6A" for instance <Mcount_cntBits_xor_2_11> in unit <i2c_master>.
+    Set user-defined property "INIT =  6AAA" for instance <Mcount_cntBits_xor_3_11> in unit <i2c_master>.
+    Set user-defined property "INIT =  8" for instance <RdNotWr_and00001> in unit <i2c_master>.
+    Set user-defined property "INIT =  EB41" for instance <Mcount_cntBytes_xor_1_11> in unit <i2c_master>.
+    Set user-defined property "INIT =  0080" for instance <NACK_and00007> in unit <i2c_master>.
+    Set user-defined property "INIT =  FE54" for instance <sregOut_mux0000_0_1> in unit <i2c_master>.
+    Set user-defined property "INIT =  FFBF" for instance <SCLout_mux00008> in unit <i2c_master>.
+    Set user-defined property "INIT =  7" for instance <SCLout_mux000017> in unit <i2c_master>.
+    Set user-defined property "INIT =  FFFB" for instance <SCLout_mux000021> in unit <i2c_master>.
+    Set user-defined property "INIT =  C040" for instance <SCLout_mux000061> in unit <i2c_master>.
+    Set user-defined property "INIT =  0080" for instance <sregIn_and00001> in unit <i2c_master>.
+    Set user-defined property "INIT =  8" for instance <SDAout_mux0003426> in unit <i2c_master>.
+    Set user-defined property "INIT =  8F88" for instance <state_FSM_FFd4_In1> in unit <i2c_master>.
+    Set user-defined property "INIT =  EA" for instance <state_FSM_FFd2_In2> in unit <i2c_master>.
+    Set user-defined property "INIT =  08" for instance <state_FSM_FFd2_In12> in unit <i2c_master>.
+    Set user-defined property "INIT =  2232" for instance <state_FSM_FFd2_In26> in unit <i2c_master>.
+    Set user-defined property "INIT =  0080" for instance <SDAout_mux00038> in unit <i2c_master>.
+    Set user-defined property "INIT =  1" for instance <SDAout_mux000316> in unit <i2c_master>.
+    Set user-defined property "INIT =  FF10" for instance <SDAout_mux000325> in unit <i2c_master>.
+    Set user-defined property "INIT =  F888" for instance <SDAout_mux0003431> in unit <i2c_master>.
+    Set user-defined property "INIT =  FFFE" for instance <SDAout_mux000393> in unit <i2c_master>.
+    Set user-defined property "INIT =  F7FF" for instance <SDAout_mux0003112> in unit <i2c_master>.
+    Set user-defined property "INIT =  E" for instance <SDAout_mux0003139> in unit <i2c_master>.
+    Set user-defined property "INIT =  FFD8" for instance <SDAout_mux0003180> in unit <i2c_master>.
+    Set user-defined property "INIT =  6" for instance <i_FIFO_Result_1_11> in unit <i2c_master>.
+    Set user-defined property "INIT =  6" for instance <i_FIFO_Result_1_1> in unit <i2c_master>.
+    Set user-defined property "INIT =  F7FF" for instance <cntBytes_not0001_SW0> in unit <i2c_master>.
+    Set user-defined property "INIT =  F2F0" for instance <cntBytes_not0001> in unit <i2c_master>.
+    Set user-defined property "INIT =  FA8A" for instance <state_FSM_FFd3_In> in unit <i2c_master>.
+    Set user-defined property "INIT =  A888" for instance <state_FSM_FFd1_In_SW0> in unit <i2c_master>.
+    Set user-defined property "INIT =  FD20" for instance <state_FSM_FFd1_In> in unit <i2c_master>.
+    Set user-defined property "INIT =  E" for instance <cntSCL_or00001> in unit <i2c_master>.
+    Set user-defined property "INIT =  BA" for instance <cntBits_or00001> in unit <i2c_master>.
+    Set user-defined property "INIT =  FFFD" for instance <sregOut_not000111> in unit <i2c_master>.
+    Set user-defined property "INIT =  FEAE" for instance <sregOut_not0001> in unit <i2c_master>.
+    Set user-defined property "INIT =  90" for instance <i_FIFO_iFull_and000076> in unit <i2c_master>.
+    Set user-defined property "INIT =  80" for instance <i_FIFO_iFull_and000096> in unit <i2c_master>.
+    Set user-defined property "INIT =  3237" for instance <i_FIFO_DoPop> in unit <i2c_master>.
+    Set user-defined property "INIT =  5444" for instance <i_FIFO_DoPush40> in unit <i2c_master>.
+    Set user-defined property "INIT =  1" for instance <SCLout> in unit <i2c_master>.
+    Set user-defined property "INIT =  A8" for instance <SCLout_mux0000721> in unit <i2c_master>.
+    Set user-defined property "INIT =  1" for instance <SDAout> in unit <i2c_master>.
+    Set user-defined property "INIT =  0" for instance <state_FSM_FFd5> in unit <i2c_master>.
+    Set user-defined property "INIT =  0" for instance <state_FSM_FFd2> in unit <i2c_master>.
+    Set user-defined property "INIT =  2" for instance <Mcount_cntSCL_cy_1_rt> in unit <i2c_master>.
+    Set user-defined property "INIT =  2" for instance <Mcount_cntSCL_cy_2_rt> in unit <i2c_master>.
+    Set user-defined property "INIT =  2" for instance <Mcount_cntSCL_cy_3_rt> in unit <i2c_master>.
+    Set user-defined property "INIT =  2" for instance <Mcount_cntSCL_cy_4_rt> in unit <i2c_master>.
+    Set user-defined property "INIT =  2" for instance <Mcount_cntSCL_cy_5_rt> in unit <i2c_master>.
+    Set user-defined property "INIT =  2" for instance <Mcount_cntSCL_cy_6_rt> in unit <i2c_master>.
+    Set user-defined property "INIT =  2" for instance <Mcount_cntSCL_xor_7_rt> in unit <i2c_master>.
+    Set user-defined property "INIT =  1" for instance <i_FIFO_DoPop_SW2> in unit <i2c_master>.
+    Set user-defined property "INIT =  ABFB" for instance <i_FIFO_iFull_or00001> in unit <i2c_master>.
+    Set user-defined property "INIT =  B" for instance <SDAout_mux000332_SW0> in unit <i2c_master>.
+    Set user-defined property "INIT =  0020" for instance <sclEnd_cmp_eq00001> in unit <i2c_master>.
+    Set user-defined property "INIT =  ECA0" for instance <SDAout_mux00032041> in unit <i2c_master>.
+    Set user-defined property "INIT =  0040" for instance <i_FIFO_DoPush13> in unit <i2c_master>.
+    Set user-defined property "INIT =  FFBF" for instance <sclEnd_cmp_eq00001_SW0> in unit <i2c_master>.
+    Set user-defined property "INIT =  2148" for instance <i_FIFO_iFull_and000071> in unit <i2c_master>.
+    Set user-defined property "INIT =  6AAA" for instance <i_FIFO_Result_3_2> in unit <i2c_master>.
+    Set user-defined property "INIT =  6AAA" for instance <i_FIFO_Result_3_11> in unit <i2c_master>.
+    Set user-defined property "INIT =  69C3" for instance <i_FIFO_iEmpty_and000058> in unit <i2c_master>.
+    Set user-defined property "INIT =  8000" for instance <sregOut_not0001_SW0> in unit <i2c_master>.
+    Set user-defined property "INIT =  69" for instance <i_FIFO_iEmpty_and000067> in unit <i2c_master>.
+    Set user-defined property "INIT =  AE" for instance <i_FIFO_DoPush40_SW0> in unit <i2c_master>.
+    Set user-defined property "INIT =  D" for instance <i_FIFO_DoPush40_SW1> in unit <i2c_master>.
+    Set user-defined property "INIT =  B8F0" for instance <i_FIFO_iEmpty_or00001> in unit <i2c_master>.
+    Set user-defined property "INIT =  FF01" for instance <SDAout_mux0003157_SW0> in unit <i2c_master>.
+    Set user-defined property "INIT =  028A" for instance <i_FIFO_iEmpty_and0000102> in unit <i2c_master>.
+    Set user-defined property "INIT =  69C3" for instance <i_FIFO_iFull_and000048> in unit <i2c_master>.
+    Set user-defined property "INIT =  D" for instance <NACK_and000020_SW0> in unit <i2c_master>.
+    Set user-defined property "INIT =  1000" for instance <NACK_and000022> in unit <i2c_master>.
+    Set user-defined property "INIT =  A8FF" for instance <i_FIFO_DoPop_SW3_G> in unit <i2c_master>.
+    Set user-defined property "INIT =  F1FF" for instance <i_FIFO_DoPop_SW4_G> in unit <i2c_master>.
+    Set user-defined property "INIT =  6A" for instance <i_FIFO_Result_2_11> in unit <i2c_master>.
+    Set user-defined property "INIT =  6A" for instance <i_FIFO_Result_2_1> in unit <i2c_master>.
+    Set user-defined property "INIT =  1000" for instance <SCLout_mux000063> in unit <i2c_master>.
+    Set user-defined property "INIT =  8F88" for instance <state_FSM_FFd5_In1> in unit <i2c_master>.
+    Set user-defined property "INIT =  B313" for instance <Mcount_cntBytes_xor_0_11> in unit <i2c_master>.
+    Set user-defined property "INIT =  FD20" for instance <DI_7_1> in unit <i2c_master>.
+    Set user-defined property "INIT =  FD20" for instance <DI_6_1> in unit <i2c_master>.
+    Set user-defined property "INIT =  FD20" for instance <DI_5_1> in unit <i2c_master>.
+    Set user-defined property "INIT =  FD20" for instance <DI_4_1> in unit <i2c_master>.
+    Set user-defined property "INIT =  FD20" for instance <DI_3_1> in unit <i2c_master>.
+    Set user-defined property "INIT =  FD20" for instance <DI_2_1> in unit <i2c_master>.
+    Set user-defined property "INIT =  FD20" for instance <DI_1_1> in unit <i2c_master>.
+    Set user-defined property "INIT =  FD20" for instance <DI_0_1> in unit <i2c_master>.
+    Set user-defined property "INIT =  C9" for instance <Mcount_cntBytes_xor_2_1_SW1> in unit <i2c_master>.
+    Set user-defined property "INIT =  EC4C" for instance <Mcount_cntBytes_xor_2_1> in unit <i2c_master>.
+    Set user-defined property "INIT =  AAA9" for instance <Mcount_cntBytes_xor_3_1_SW1> in unit <i2c_master>.
+    Set user-defined property "INIT =  EC4C" for instance <Mcount_cntBytes_xor_3_1> in unit <i2c_master>.
+    Set user-defined property "INIT =  EC4C" for instance <sregOut_mux0000_7_1> in unit <i2c_master>.
+    Set user-defined property "INIT =  EC4C" for instance <sregOut_mux0000_7_2> in unit <i2c_master>.
+    Set user-defined property "INIT =  EC4C" for instance <sregOut_mux0000_6_1> in unit <i2c_master>.
+    Set user-defined property "INIT =  EC4C" for instance <sregOut_mux0000_6_2> in unit <i2c_master>.
+    Set user-defined property "INIT =  EC4C" for instance <sregOut_mux0000_5_1> in unit <i2c_master>.
+    Set user-defined property "INIT =  EC4C" for instance <sregOut_mux0000_5_2> in unit <i2c_master>.
+    Set user-defined property "INIT =  EC4C" for instance <sregOut_mux0000_4_1> in unit <i2c_master>.
+    Set user-defined property "INIT =  EC4C" for instance <sregOut_mux0000_4_2> in unit <i2c_master>.
+    Set user-defined property "INIT =  EC4C" for instance <sregOut_mux0000_3_1> in unit <i2c_master>.
+    Set user-defined property "INIT =  EC4C" for instance <sregOut_mux0000_3_2> in unit <i2c_master>.
+    Set user-defined property "INIT =  EC4C" for instance <sregOut_mux0000_2_1> in unit <i2c_master>.
+    Set user-defined property "INIT =  EC4C" for instance <sregOut_mux0000_2_2> in unit <i2c_master>.
+    Set user-defined property "INIT =  EC4C" for instance <sregOut_mux0000_1_1> in unit <i2c_master>.
+    Set user-defined property "INIT =  EC4C" for instance <sregOut_mux0000_1_2> in unit <i2c_master>.
+    Set user-defined property "INIT =  FFFE" for instance <Mcount_cntBytes_xor_3_111> in unit <i2c_master>.
+    Set user-defined property "INIT =  0001" for instance <SDAout_mux0003412> in unit <i2c_master>.
+    Set user-defined property "INIT =  0001" for instance <SDAout_mux0003425> in unit <i2c_master>.
+    Set user-defined property "INIT =  B" for instance <SDAout_mux000337> in unit <i2c_master>.
+    Set user-defined property "INIT =  8" for instance <SDAout_mux000388> in unit <i2c_master>.
+    Set user-defined property "INIT =  7" for instance <SDAout_mux0003107> in unit <i2c_master>.
+    Set user-defined property "INIT =  F1" for instance <state_FSM_FFd3_In_SW0> in unit <i2c_master>.
+    Set user-defined property "INIT =  C404" for instance <sregOut_not0001_SW1> in unit <i2c_master>.
+    Set user-defined property "INIT =  08" for instance <SDAout_mux000332> in unit <i2c_master>.
+    Set user-defined property "INIT =  4000" for instance <NACK_and000011> in unit <i2c_master>.
+    Set user-defined property "INIT =  D" for instance <i_FIFO_DoPop_SW1> in unit <i2c_master>.
+    Set user-defined property "INIT =  FF7F" for instance <i_FIFO_DoPush13_SW0> in unit <i2c_master>.
+    Set user-defined property "INIT =  1000" for instance <SDAout_mux000358> in unit <i2c_master>.
+    Set user-defined property "INIT =  C4" for instance <i_FIFO_DoPush0> in unit <i2c_master>.
+    Set user-defined property "INIT =  FFFD" for instance <i_FIFO_DoPop_SW0> in unit <i2c_master>.
+    Set user-defined property "INIT =  FFFE" for instance <SDAout_mux0003157> in unit <i2c_master>.
+    Set user-defined property "INIT =  0990" for instance <i_FIFO_iEmpty_and0000102_SW0> in unit <i2c_master>.
+Entity <i2c_master> analyzed. Unit <i2c_master> generated.
+
+Analyzing Entity <oled_ctrl> in library <work> (Architecture <behavioral>).
+Entity <oled_ctrl> analyzed. Unit <oled_ctrl> generated.
+
+Analyzing module <IFD_MXILINX_OLED_display> in library <work>.
+	INIT = 1'b0
+Module <IFD_MXILINX_OLED_display> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_15> in unit <IFD_MXILINX_OLED_display>.
+    Set user-defined property "IOB =  TRUE" for instance <I_36_15> in unit <IFD_MXILINX_OLED_display>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <I_36_24> in unit <IFD_MXILINX_OLED_display>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <I_36_24> in unit <IFD_MXILINX_OLED_display>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <I_36_24> in unit <IFD_MXILINX_OLED_display>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <I_36_24> in unit <IFD_MXILINX_OLED_display>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <I_36_24> in unit <IFD_MXILINX_OLED_display>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <character_rom>.
+    Related source file is "C:/XilinxPrj/current_xilinx_1904/OLED_display/character_ROM.vhd".
+WARNING:Xst:1781 - Signal <ROM> is used but never assigned. Tied to default value.
+    Found 128x8-bit ROM for signal <rdata>.
+    Found 8-bit register for signal <DATA>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   8 D-type flip-flop(s).
+Unit <character_rom> synthesized.
+
+
+Synthesizing Unit <digit_printer>.
+    Related source file is "C:/XilinxPrj/current_xilinx_1904/OLED_display/digit_printer.vhd".
+WARNING:Xst:1305 - Output <DATA_OUT> is never assigned. Tied to value 00000000.
+WARNING:Xst:647 - Input <DATA_IN> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 7                                              |
+    | Transitions        | 10                                             |
+    | Inputs             | 3                                              |
+    | Outputs            | 5                                              |
+    | Clock              | CLK                       (rising_edge)        |
+    | Reset              | RST                       (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit register for signal <BUSY>.
+    Found 3-bit register for signal <byte_number>.
+    Found 3-bit adder for signal <byte_number$addsub0000> created at line 164.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   4 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <digit_printer> synthesized.
+
+
+Synthesizing Unit <digit_transmitter>.
+    Related source file is "C:/XilinxPrj/current_xilinx_1904/OLED_display/digit_transmitter.vhd".
+    Found finite state machine <FSM_1> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 8                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 4                                              |
+    | Clock              | CLK                       (rising_edge)        |
+    | Reset              | RST                       (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | init                                           |
+    | Power Up State     | init                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 4-bit register for signal <DIGIT>.
+    Found 1-bit register for signal <button_current_state>.
+    Found 1-bit register for signal <button_pressed>.
+    Found 1-bit register for signal <button_previous_state>.
+    Found 84-bit register for signal <digit_line>.
+    Found 84-bit register for signal <digit_mask>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred 175 D-type flip-flop(s).
+Unit <digit_transmitter> synthesized.
+
+
+Synthesizing Unit <oled_ctrl>.
+    Related source file is "C:/XilinxPrj/current_xilinx_1904/OLED_display/OLED_Ctrl.vhd".
+    Found finite state machine <FSM_2> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 8                                              |
+    | Transitions        | 15                                             |
+    | Inputs             | 5                                              |
+    | Outputs            | 6                                              |
+    | Clock              | Clk                       (rising_edge)        |
+    | Reset              | Reset                     (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | sreset                                         |
+    | Power Up State     | sreset                                         |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 3-bit up counter for signal <cntPush>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   1 Counter(s).
+Unit <oled_ctrl> synthesized.
+
+
+Synthesizing Unit <i2c_master>.
+    Related source file is "C:/XilinxPrj/current_xilinx_1904/OLED_display/I2C_Master.vhd".
+WARNING:Xst:646 - Signal <NLW_i_FIFO_Mram_RAM8_SPO_UNCONNECTED> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <NLW_i_FIFO_Mram_RAM7_SPO_UNCONNECTED> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <NLW_i_FIFO_Mram_RAM6_SPO_UNCONNECTED> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <NLW_i_FIFO_Mram_RAM5_SPO_UNCONNECTED> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <NLW_i_FIFO_Mram_RAM4_SPO_UNCONNECTED> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <NLW_i_FIFO_Mram_RAM3_SPO_UNCONNECTED> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <NLW_i_FIFO_Mram_RAM2_SPO_UNCONNECTED> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <NLW_i_FIFO_Mram_RAM1_SPO_UNCONNECTED> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <NLW_IOB2_O_UNCONNECTED> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <i2c_master> synthesized.
+
+
+Synthesizing Unit <IFD_MXILINX_OLED_display>.
+    Related source file is "OLED_display.vf".
+Unit <IFD_MXILINX_OLED_display> synthesized.
+
+
+Synthesizing Unit <OLED_display>.
+    Related source file is "OLED_display.vf".
+Unit <OLED_display> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 128x8-bit ROM                                         : 1
+# Adders/Subtractors                                   : 1
+ 3-bit adder                                           : 1
+# Counters                                             : 1
+ 3-bit up counter                                      : 1
+# Registers                                            : 9
+ 1-bit register                                        : 4
+ 3-bit register                                        : 1
+ 4-bit register                                        : 1
+ 8-bit register                                        : 1
+ 84-bit register                                       : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_2> for best encoding.
+Optimizing FSM <OC0/state/FSM> on signal <state[1:3]> with user encoding.
+------------------------
+ State      | Encoding
+------------------------
+ sreset     | 000
+ sgo1       | 001
+ spush1     | 010
+ swait1     | 011
+ swaitwrite | 100
+ sgo2       | 101
+ spush2     | 110
+ swait2     | 111
+------------------------
+Analyzing FSM <FSM_1> for best encoding.
+Optimizing FSM <dt0/state/FSM> on signal <state[1:5]> with one-hot encoding.
+-------------------------
+ State       | Encoding
+-------------------------
+ init        | 00001
+ idle        | 00010
+ print       | 00100
+ shift_bytes | 10000
+ done        | 01000
+-------------------------
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <dp0/state/FSM> on signal <state[1:7]> with one-hot encoding.
+-------------------------------
+ State             | Encoding
+-------------------------------
+ idle              | 0000001
+ ready             | 0000010
+ check             | 0000100
+ construct_address | 0001000
+ read_data         | 0010000
+ print_data        | 0100000
+ go_to_next_byte   | 1000000
+-------------------------------
+WARNING:Xst:1293 - FF/Latch <digit_line_55> has a constant value of 0 in block <dt0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <digit_line_59> has a constant value of 0 in block <dt0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <digit_line_63> has a constant value of 0 in block <dt0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <digit_line_67> has a constant value of 0 in block <dt0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <digit_line_70> has a constant value of 0 in block <dt0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <digit_line_71> has a constant value of 0 in block <dt0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <digit_line_74> has a constant value of 0 in block <dt0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <digit_line_75> has a constant value of 0 in block <dt0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <digit_line_77> has a constant value of 0 in block <dt0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <digit_line_78> has a constant value of 0 in block <dt0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <digit_line_79> has a constant value of 0 in block <dt0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <digit_line_80> has a constant value of 0 in block <dt0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <digit_line_81> has a constant value of 0 in block <dt0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <digit_line_82> has a constant value of 0 in block <dt0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <digit_line_83> has a constant value of 0 in block <dt0>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <character_rom>.
+INFO:Xst:3044 - The ROM <Mrom_rdata> will be implemented as a read-only BLOCK RAM, absorbing the register: <DATA>.
+INFO:Xst:3225 - The RAM <Mrom_rdata> will be implemented as BLOCK RAM
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 128-word x 8-bit                    |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <CLK>           | rise     |
+    |     enA            | connected to signal <EN>            | high     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <ADDR>          |          |
+    |     diA            | connected to internal node          |          |
+    |     doA            | connected to signal <DATA>          |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <character_rom> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 3
+# RAMs                                                 : 1
+ 128x8-bit single-port block RAM                       : 1
+# Adders/Subtractors                                   : 1
+ 3-bit adder                                           : 1
+# Counters                                             : 1
+ 3-bit up counter                                      : 1
+# Registers                                            : 232
+ Flip-Flops                                            : 232
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1293 - FF/Latch <digit_line_55> has a constant value of 0 in block <digit_transmitter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <digit_line_59> has a constant value of 0 in block <digit_transmitter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <digit_line_63> has a constant value of 0 in block <digit_transmitter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <digit_line_67> has a constant value of 0 in block <digit_transmitter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <digit_line_70> has a constant value of 0 in block <digit_transmitter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <digit_line_71> has a constant value of 0 in block <digit_transmitter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <digit_line_74> has a constant value of 0 in block <digit_transmitter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <digit_line_75> has a constant value of 0 in block <digit_transmitter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <digit_line_77> has a constant value of 0 in block <digit_transmitter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <digit_line_78> has a constant value of 0 in block <digit_transmitter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <digit_line_79> has a constant value of 0 in block <digit_transmitter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <digit_line_80> has a constant value of 0 in block <digit_transmitter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <digit_line_81> has a constant value of 0 in block <digit_transmitter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <digit_line_82> has a constant value of 0 in block <digit_transmitter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <digit_line_83> has a constant value of 0 in block <digit_transmitter>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <OLED_display> ...
+
+Optimizing unit <digit_printer> ...
+
+Optimizing unit <digit_transmitter> ...
+
+Optimizing unit <oled_ctrl> ...
+
+Optimizing unit <i2c_master> ...
+
+Optimizing unit <IFD_MXILINX_OLED_display> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+INFO:Xst:2261 - The FF/Latch <dt0/digit_line_76> in Unit <OLED_display> is equivalent to the following 7 FFs/Latches, which will be removed : <dt0/digit_line_73> <dt0/digit_line_66> <dt0/digit_line_51> <dt0/digit_mask_83> <dt0/digit_mask_82> <dt0/digit_mask_81> <dt0/digit_mask_80> 
+INFO:Xst:2261 - The FF/Latch <dt0/digit_line_69> in Unit <OLED_display> is equivalent to the following 6 FFs/Latches, which will be removed : <dt0/digit_line_62> <dt0/digit_line_47> <dt0/digit_mask_79> <dt0/digit_mask_78> <dt0/digit_mask_77> <dt0/digit_mask_76> 
+INFO:Xst:2261 - The FF/Latch <dt0/digit_line_58> in Unit <OLED_display> is equivalent to the following 5 FFs/Latches, which will be removed : <dt0/digit_line_43> <dt0/digit_mask_75> <dt0/digit_mask_74> <dt0/digit_mask_73> <dt0/digit_mask_72> 
+INFO:Xst:2261 - The FF/Latch <dt0/digit_line_54> in Unit <OLED_display> is equivalent to the following 5 FFs/Latches, which will be removed : <dt0/digit_line_39> <dt0/digit_mask_71> <dt0/digit_mask_70> <dt0/digit_mask_69> <dt0/digit_mask_68> 
+INFO:Xst:2261 - The FF/Latch <dt0/digit_line_35> in Unit <OLED_display> is equivalent to the following 4 FFs/Latches, which will be removed : <dt0/digit_mask_67> <dt0/digit_mask_66> <dt0/digit_mask_65> <dt0/digit_mask_64> 
+INFO:Xst:2261 - The FF/Latch <dt0/digit_line_31> in Unit <OLED_display> is equivalent to the following 4 FFs/Latches, which will be removed : <dt0/digit_mask_63> <dt0/digit_mask_62> <dt0/digit_mask_61> <dt0/digit_mask_60> 
+INFO:Xst:2261 - The FF/Latch <dt0/digit_line_27> in Unit <OLED_display> is equivalent to the following 4 FFs/Latches, which will be removed : <dt0/digit_mask_59> <dt0/digit_mask_58> <dt0/digit_mask_57> <dt0/digit_mask_56> 
+INFO:Xst:2261 - The FF/Latch <dt0/digit_line_23> in Unit <OLED_display> is equivalent to the following 4 FFs/Latches, which will be removed : <dt0/digit_mask_55> <dt0/digit_mask_54> <dt0/digit_mask_53> <dt0/digit_mask_52> 
+INFO:Xst:2261 - The FF/Latch <dt0/digit_mask_51> in Unit <OLED_display> is equivalent to the following 3 FFs/Latches, which will be removed : <dt0/digit_mask_50> <dt0/digit_mask_49> <dt0/digit_mask_48> 
+INFO:Xst:2261 - The FF/Latch <dt0/digit_mask_47> in Unit <OLED_display> is equivalent to the following 3 FFs/Latches, which will be removed : <dt0/digit_mask_46> <dt0/digit_mask_45> <dt0/digit_mask_44> 
+INFO:Xst:2261 - The FF/Latch <dt0/digit_mask_43> in Unit <OLED_display> is equivalent to the following 3 FFs/Latches, which will be removed : <dt0/digit_mask_42> <dt0/digit_mask_41> <dt0/digit_mask_40> 
+INFO:Xst:2261 - The FF/Latch <dt0/digit_mask_39> in Unit <OLED_display> is equivalent to the following 3 FFs/Latches, which will be removed : <dt0/digit_mask_38> <dt0/digit_mask_37> <dt0/digit_mask_36> 
+INFO:Xst:2261 - The FF/Latch <dt0/digit_mask_35> in Unit <OLED_display> is equivalent to the following 3 FFs/Latches, which will be removed : <dt0/digit_mask_34> <dt0/digit_mask_33> <dt0/digit_mask_32> 
+INFO:Xst:2261 - The FF/Latch <dt0/digit_mask_31> in Unit <OLED_display> is equivalent to the following 3 FFs/Latches, which will be removed : <dt0/digit_mask_30> <dt0/digit_mask_29> <dt0/digit_mask_28> 
+INFO:Xst:2261 - The FF/Latch <dt0/digit_mask_27> in Unit <OLED_display> is equivalent to the following 3 FFs/Latches, which will be removed : <dt0/digit_mask_26> <dt0/digit_mask_25> <dt0/digit_mask_24> 
+INFO:Xst:2261 - The FF/Latch <dt0/digit_mask_23> in Unit <OLED_display> is equivalent to the following 3 FFs/Latches, which will be removed : <dt0/digit_mask_22> <dt0/digit_mask_21> <dt0/digit_mask_20> 
+INFO:Xst:2261 - The FF/Latch <dt0/digit_mask_19> in Unit <OLED_display> is equivalent to the following 3 FFs/Latches, which will be removed : <dt0/digit_mask_18> <dt0/digit_mask_17> <dt0/digit_mask_16> 
+INFO:Xst:2261 - The FF/Latch <dt0/digit_mask_15> in Unit <OLED_display> is equivalent to the following 3 FFs/Latches, which will be removed : <dt0/digit_mask_14> <dt0/digit_mask_13> <dt0/digit_mask_12> 
+INFO:Xst:2261 - The FF/Latch <dt0/digit_mask_11> in Unit <OLED_display> is equivalent to the following 3 FFs/Latches, which will be removed : <dt0/digit_mask_10> <dt0/digit_mask_9> <dt0/digit_mask_8> 
+INFO:Xst:2261 - The FF/Latch <dt0/digit_mask_7> in Unit <OLED_display> is equivalent to the following 3 FFs/Latches, which will be removed : <dt0/digit_mask_6> <dt0/digit_mask_5> <dt0/digit_mask_4> 
+INFO:Xst:2261 - The FF/Latch <dt0/digit_mask_3> in Unit <OLED_display> is equivalent to the following 3 FFs/Latches, which will be removed : <dt0/digit_mask_2> <dt0/digit_mask_1> <dt0/digit_mask_0> 
+Found area constraint ratio of 100 (+ 5) on block OLED_display, actual ratio is 3.
+INFO:Xst:2260 - The FF/Latch <dt0/state_FSM_FFd5> in Unit <OLED_display> is equivalent to the following FF/Latch : <IM0/state_FSM_FFd6> 
+
+Final Macro Processing ...
+
+Processing Unit <OLED_display> :
+	Found 4-bit shift register for signal <dt0/digit_line_23>.
+	Found 4-bit shift register for signal <dt0/digit_line_22>.
+	Found 13-bit shift register for signal <dt0/digit_mask_3>.
+Unit <OLED_display> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 135
+ Flip-Flops                                            : 135
+# Shift Registers                                      : 3
+ 13-bit shift register                                 : 1
+ 4-bit shift register                                  : 2
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : OLED_display.ngr
+Top Level Output File Name         : OLED_display
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 7
+
+Cell Usage :
+# BELS                             : 242
+#      GND                         : 2
+#      INV                         : 6
+#      LUT1                        : 7
+#      LUT2                        : 28
+#      LUT2_D                      : 2
+#      LUT2_L                      : 3
+#      LUT3                        : 29
+#      LUT3_D                      : 3
+#      LUT3_L                      : 4
+#      LUT4                        : 115
+#      LUT4_D                      : 5
+#      LUT4_L                      : 12
+#      MUXCY                       : 7
+#      MUXF5                       : 9
+#      VCC                         : 2
+#      XORCY                       : 8
+# FlipFlops/Latches                : 153
+#      FD                          : 38
+#      FDCE                        : 1
+#      FDE                         : 28
+#      FDR                         : 20
+#      FDRE                        : 19
+#      FDRS                        : 5
+#      FDS                         : 5
+#      FDSE                        : 37
+# RAMS                             : 9
+#      RAM16X1D                    : 8
+#      RAMB16_S9                   : 1
+# Shift Registers                  : 3
+#      SRL16E                      : 3
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 6
+#      IBUF                        : 2
+#      IOBUF                       : 2
+#      OBUF                        : 2
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                      138  out of   4656     2%  
+ Number of Slice Flip Flops:            152  out of   9312     1%  
+ Number of 4 input LUTs:                233  out of   9312     2%  
+    Number used as logic:               214
+    Number used as Shift registers:       3
+    Number used as RAMs:                 16
+ Number of IOs:                           7
+ Number of bonded IOBs:                   7  out of    232     3%  
+    IOB Flip Flops:                       1
+ Number of BRAMs:                         1  out of     20     5%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK                                | BUFGP                  | 165   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+XLXI_5/XLXN_1(XLXI_5/I_36_29:G)    | NONE(XLXI_5/I_36_15)   | 1     |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 7.884ns (Maximum Frequency: 126.839MHz)
+   Minimum input arrival time before clock: 4.538ns
+   Maximum output required time after clock: 4.496ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 7.884ns (frequency: 126.839MHz)
+  Total number of paths / destination ports: 2028 / 410
+-------------------------------------------------------------------------
+Delay:               7.884ns (Levels of Logic = 4)
+  Source:            IM0/cntSCL_5 (FF)
+  Destination:       IM0/i_FIFO_iFull (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: IM0/cntSCL_5 to IM0/i_FIFO_iFull
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             11   0.591   1.012  IM0/cntSCL_5 (IM0/cntSCL<5>)
+     LUT2:I1->O            2   0.704   0.451  IM0/SDAout_mux000332_SW0 (IM0/N71)
+     LUT4:I3->O           15   0.704   1.021  IM0/sclEnd_cmp_eq00001 (IM0/sclEnd)
+     LUT4:I3->O           13   0.704   1.018  IM0/i_FIFO_DoPush40 (IM0/i_FIFO_DoPush)
+     LUT3:I2->O            1   0.704   0.420  IM0/i_FIFO_iFull_and000096 (IM0/i_FIFO_iFull_and0000)
+     FDRE:CE                   0.555          IM0/i_FIFO_iFull
+    ----------------------------------------
+    Total                      7.884ns (3.962ns logic, 3.922ns route)
+                                       (50.3% logic, 49.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              4.538ns (Levels of Logic = 3)
+  Source:            SDA (PAD)
+  Destination:       IM0/NACK_12 (FF)
+  Destination Clock: CLK rising
+
+  Data Path: SDA to IM0/NACK_12
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IOBUF:IO->O           2   1.218   0.482  IM0/IOB1 (IM0/SDAin)
+     LUT4:I2->O            1   0.704   0.455  IM0/NACK_and00007 (IM0/NACK_and00007_95)
+     LUT4:I2->O            1   0.704   0.420  IM0/NACK_and000022 (IM0/NACK_and0000)
+     FDRE:CE                   0.555          IM0/NACK_12
+    ----------------------------------------
+    Total                      4.538ns (3.181ns logic, 1.357ns route)
+                                       (70.1% logic, 29.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              4.496ns (Levels of Logic = 1)
+  Source:            dt0/state_FSM_FFd3 (FF)
+  Destination:       EN_PRINTER (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: dt0/state_FSM_FFd3 to EN_PRINTER
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              5   0.591   0.633  dt0/state_FSM_FFd3 (dt0/state_FSM_FFd3)
+     OBUF:I->O                 3.272          EN_PRINTER_OBUF (EN_PRINTER)
+    ----------------------------------------
+    Total                      4.496ns (3.863ns logic, 0.633ns route)
+                                       (85.9% logic, 14.1% route)
+
+=========================================================================
+WARNING:Xst:616 - Invalid property "SLEW 20": Did not attach to IM0/IOB2.
+WARNING:Xst:616 - Invalid property "SLEW 20": Did not attach to IM0/IOB1.
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 6.43 secs
+ 
+--> 
+
+Total memory usage is 223280 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   51 (   0 filtered)
+Number of infos    :   24 (   0 filtered)
+

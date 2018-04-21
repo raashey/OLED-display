@@ -1,0 +1,24 @@
+vhdtdtfi -lib work digit_printer.vhd -prj OLED_display -o digit_printer.spl -module digit_printer -template E:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e digit_printer.spl C:/Users/Developer/Xilinx/OLED_display/digit_printer.sym 
+vhdtdtfi -lib work digit_printer.vhd -prj OLED_display -o digit_printer.spl -module digit_printer -template E:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e digit_printer.spl C:/Users/Developer/Xilinx/OLED_display/digit_printer.sym 
+vhdtdtfi -lib work digit_printer.vhd -prj OLED_display -o digit_printer.spl -module digit_printer -template E:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e digit_printer.spl C:/Users/Developer/Xilinx/OLED_display/digit_printer.sym 
+vhdtdtfi -lib work digit_printer.vhd -prj OLED_display -o digit_printer.spl -module digit_printer -template E:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e digit_printer.spl C:/Users/Developer/Xilinx/OLED_display/digit_printer.sym 
+vhdtdtfi -lib work digit_printer.vhd -prj OLED_display -o digit_printer.spl -module digit_printer -template E:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e digit_printer.spl C:/Users/Developer/Xilinx/OLED_display/digit_printer.sym 
+vhdtdtfi -lib work digit_printer.vhd -prj OLED_display -o digit_printer.spl -module digit_printer -template E:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e digit_printer.spl C:/Users/Thamian/OLED_display/digit_printer.sym 
+vhdtdtfi -lib work digit_printer.vhd -prj OLED_display -o digit_printer.spl -module digit_printer -template E:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e digit_printer.spl C:/Users/Thamian/OLED_display/digit_printer.sym 
+vhdtdtfi -lib work digit_printer.vhd -prj OLED_display -o digit_printer.spl -module digit_printer -template E:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e digit_printer.spl C:/Users/Thamian/OLED_display/digit_printer.sym 
+vhdtdtfi -lib work digit_printer.vhd -prj OLED_display -o digit_printer.spl -module digit_printer -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e digit_printer.spl C:/XilinxPrj/OLED_display/digit_printer.sym 
+vhdtdtfi -lib work digit_printer.vhd -prj OLED_display -o digit_printer.spl -module digit_printer -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e digit_printer.spl C:/XilinxPrj/OLED_display/digit_printer.sym 
+vhdtdtfi -lib work digit_printer.vhd -prj OLED_display -o digit_printer.spl -module digit_printer -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e digit_printer.spl C:/XilinxPrj/OLED_display/digit_printer.sym 
+vhdtdtfi -lib work digit_printer.vhd -prj OLED_display -o digit_printer.spl -module digit_printer -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e digit_printer.spl C:/XilinxPrj/OLED_display/digit_printer.sym 
